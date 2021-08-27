@@ -1,0 +1,41 @@
+ <!-- Event File v6.0 -->
+ 
+	<!-- Add your events using the format below, in each month, on the day in that month, and the event text. -->
+	<!-- See the 'Holidays.xml' for more examples. -->
+	<!-- Add Inactive="true" to disable all events. -->
+
+ <EventFile Repeat="Year">
+	<Variable Name="DayNumber" Select="86400"/>
+	
+ 	<!-- Monthly Events -->
+	<Set Month="1">
+		<Event Day="1">Resolutions Time</Event>
+	</Set>
+	<Set Month="2">
+		<Event Day="3">Super Bowl MMXIX</Event>
+		<Event Day="10">Update Resolutions</Event>
+	</Set>
+	<Event Month="3" Day="21">Spring Solstice</Event>
+	<Set Month="4">
+		<Event Day="24">Where's Spring?</Event>
+	</Set>
+	<Set Month="5">
+		<Event Day="{$FirstSun}">Spring is Sprung!</Event>
+	</Set>
+	<Set Month="6">
+		<Event Day="15">Special Day</Event>
+	</Set>
+	<Event Month="7" Day="3">Get Ready to PARTY!</Event>
+	<Set Month="9">
+		<Event Day="14">Another Day</Event>
+	</Set>
+	<Set Month="10">
+		<Event Day="28">Bats!</Event>
+	</Set>
+	<Set Month="11">
+		<Event Day="{$SecondMon}">Obs Veterans Day</Event>
+	</Set>
+	<Set Month="12">
+		<Event Day="7" Year="1941" Anniversary="true">Pearl Harbor Remembrance Day</Event>
+	</Set>
+</EventFile>

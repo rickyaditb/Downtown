@@ -1,0 +1,21 @@
+Changes:
+
+Added: Added Finish event option. Specified in "M/D/Y" format.
+Added: Variables in Event files can now be nested, allowing for {$Variable{$AnotherVariable}}.
+Added: Actions to change the month with the mouse scroll wheel can now be disabled via the DisableScroll setting.
+Added: Built-in variable for Orthodox Easter.
+
+Remove: The Locale setting is no longer available. The functionality used was removed in Rainmeter due to issues with affecting other skins.
+
+Change: Weekend Style is only applied if an Event is not present on that day.
+Change: Skip event option is now specified in "M/D/Y" format.
+Change: Changed parsing of event files to allow closing event tags (I.E. &lt;Event&gt;Description&lt;/Event&gt;).
+Change: Changed parsing of event files to allow numeric escape characters.
+Change: The LastWkHidden variable now represents the number of weeks that need to be hidden.
+Change: The NextEvent variable is now only set when in the current month or a future month.
+NEW Change: The Event List now follows the Leading Zeroes option.
+
+Fix: Script would crash if an invalid Event file was specified.
+Fix: Meters included in Styles would appear behind the Background meter.
+Fix: Unmatched /Set tags would cause the script to crash.
+Fix: Event File Variables defined using variables would not be parsed.
